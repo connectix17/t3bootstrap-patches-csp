@@ -1,0 +1,21 @@
+{
+  "name": "zahnit/t3bootstrap-patches-csp",
+  "type": "typo3-cms-extension",
+  "description": "",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "typo3/cms-core": "^13.4",
+    "cweagans/composer-patches": "^1",
+    "t3bootstrap/template": "13.14.14"
+  },
+  "extra": {
+    "patches": {
+       "t3bootstrap/template": {
+          "0001-replace-inline-html-includes-by-csp-aware-flex-includes": "vendor/zahnit/t3bootstrap-patches-csp/patches/0001-replace-inline-html-includes-by-csp-aware-flex-includes"
+        },
+        "wapplersystems/ws-slider":{
+          "0001-remove-dynamically-unremovable-csp-directives-unsustainable-in-current-typo3": "vendor/zahnit/ws-slider-patches-csp/patches/0001-remove-dynamically-unremovable-csp-directives-unsustainable-in-current-typo3"
+        }
+      }
+    }
+}
